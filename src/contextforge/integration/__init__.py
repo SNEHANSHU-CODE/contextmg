@@ -1,8 +1,8 @@
 """
-ContextForge: A declarative, fine-grained automated context engineering framework for LLMs.
+First-class package integration workspace ecosystem module hooks.
 
-This module provides a React-like component-driven architecture for managing prompt context
-with deterministic token budgeting and dynamic allocation strategies.
+This module exposes core interface layers clearly to top-level package boundaries,
+enabling clean integration with LangChain LCEL pipelines and external orchestration systems.
 """
 
 from contextforge.engine import AutomatedContextEngine
@@ -14,5 +14,3 @@ __all__ = [
     "StaticContextComponent",
     "AdaptiveContextPool"
 ]
-
-__version__ = "0.1.0"
