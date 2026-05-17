@@ -5,8 +5,8 @@ This module exposes core interface layers clearly to top-level package boundarie
 enabling clean integration with LangChain LCEL pipelines and external orchestration systems.
 """
 
-from contextforge.engine import AutomatedContextEngine
-from contextforge.base import BaseContextComponent, StaticContextComponent, AdaptiveContextPool
+from contextmg.engine import AutomatedContextEngine
+from contextmg.base import BaseContextComponent, StaticContextComponent, AdaptiveContextPool
 
 __all__ = [
     "AutomatedContextEngine",

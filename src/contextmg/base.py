@@ -1,5 +1,5 @@
 """
-Base component abstractions for ContextForge context engineering framework.
+Base component abstractions for contextmg context engineering framework.
 
 Defines the abstract baseline component lifecycle and concrete implementations for
 static text blocks and adaptive context pools that operate with strict token budgets.

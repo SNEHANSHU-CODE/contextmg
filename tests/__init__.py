@@ -1,1 +1,1 @@
-"""Test suite for ContextForge framework."""
+"""Test suite for contextmg framework."""

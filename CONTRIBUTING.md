@@ -1,6 +1,6 @@
-# Contributing to ContextForge
+# Contributing to contextmg
 
-Thank you for your interest in contributing to ContextForge! We believe that collaborative development leads to better software for everyone. This document provides guidelines and instructions for contributing to the project.
+Thank you for your interest in contributing to contextmg! We believe that collaborative development leads to better software for everyone. This document provides guidelines and instructions for contributing to the project.
 
 ## Code of Conduct
 
@@ -24,7 +24,7 @@ Before creating bug reports, please check the issue list to avoid duplicates. Wh
 Feature suggestions are welcome! When proposing a feature:
 
 - **Use clear, descriptive language**: Explain the use case and benefits
-- **Provide context**: How does this feature fit into ContextForge's mission?
+- **Provide context**: How does this feature fit into contextmg's mission?
 - **Include examples**: Show how the feature would be used
 - **Consider alternatives**: Have you thought of other ways to solve this?
 
@@ -71,8 +71,8 @@ We accept pull requests from community members. To submit a PR:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/contextforge.git
-cd contextforge
+git clone https://github.com/yourusername/contextmg.git
+cd contextmg
 
 # Create and activate virtual environment
 python -m venv .venv
@@ -92,7 +92,7 @@ pip install -e ".[dev]"
 pytest -v
 
 # Run tests with coverage report
-pytest --cov=contextforge tests/
+pytest --cov=contextmg tests/
 
 # Run specific test class
 pytest tests/test_engine.py::TestAutomatedContextEngine -v
@@ -259,8 +259,8 @@ When you submit a PR:
 
 ## License
 
-By contributing to ContextForge, you agree that your contributions will be licensed under the MIT License.
+By contributing to contextmg, you agree that your contributions will be licensed under the MIT License.
 
 ---
 
-Thank you for helping make ContextForge better! 🚀
+Thank you for helping make contextmg better! 🚀

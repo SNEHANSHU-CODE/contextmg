@@ -1,5 +1,5 @@
 """
-Comprehensive test suite for the ContextForge AutomatedContextEngine.
+Comprehensive test suite for the contextmg AutomatedContextEngine.
 
 Tests verify:
 1. LCEL compatibility and RunnableSerializable integration
@@ -14,8 +14,8 @@ Tests verify:
 import pytest
 from langchain_core.documents import Document
 from langchain_core.prompt_values import PromptValue
-from contextforge.engine import AutomatedContextEngine
-from contextforge.base import StaticContextComponent, AdaptiveContextPool
+from contextmg.engine import AutomatedContextEngine
+from contextmg.base import StaticContextComponent, AdaptiveContextPool
 
 
 class TestAutomatedContextEngine:
@@ -35,7 +35,7 @@ class TestAutomatedContextEngine:
         assert engine.recent_window_size == 5
 
     def test_engine_lcel_compatibility_and_budgeting(self):
-        """Verifies that the ContextForge core engine executes cleanly within token boundaries."""
+        """Verifies that the contextmg core engine executes cleanly within token boundaries."""
         
         # 1. Initialize context engine with structural token boundaries
         engine = AutomatedContextEngine(max_tokens=1000, recent_window_size=2)

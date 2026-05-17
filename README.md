@@ -1,8 +1,8 @@
-# ContextForge 🛠️
+# contextmg 🛠️
 
 > **A declarative, fine-grained automated context engineering framework designed for production AI systems.**
 
-ContextForge brings React's component-driven lifecycle architecture and deterministic state rendering natively into the LangChain ecosystem as a **first-class orchestration middleware layer**.
+contextmg brings React's component-driven lifecycle architecture and deterministic state rendering natively into the LangChain ecosystem as a **first-class orchestration middleware layer**.
 
 ## Strategic Value Proposition
 
@@ -11,7 +11,7 @@ In production, context engineering fails when it operates as an unmonitored stri
 - **"Lost-in-the-Middle" document placement** causes LLM attention drops
 - **Runaway token expenses** accumulate from uncontrolled memory growth
 
-ContextForge solves this by shifting prompt building from **fragile string formatting** to a dynamic, token-aware **Directed Acyclic Graph (DAG)** architecture:
+contextmg solves this by shifting prompt building from **fragile string formatting** to a dynamic, token-aware **Directed Acyclic Graph (DAG)** architecture:
 
 ```
        [ 1. DEVELOPER DECLARATIVE INTENT ]
@@ -42,7 +42,7 @@ ContextForge solves this by shifting prompt building from **fragile string forma
 Every prompt segment is built as an **isolated, self-contained component object** derived from `BaseContextComponent`:
 
 ```python
-from contextforge.base import StaticContextComponent, AdaptiveContextPool
+from contextmg.base import StaticContextComponent, AdaptiveContextPool
 
 # System invariants with guaranteed token allocation
 system_block = StaticContextComponent(
@@ -74,7 +74,7 @@ Components are evaluated sequentially according to a **strict priority hierarchy
 The compilation core inherits directly from **LangChain's `RunnableSerializable`** module:
 
 ```python
-from contextforge.engine import AutomatedContextEngine
+from contextmg.engine import AutomatedContextEngine
 from langchain_core.runnables import RunnableSequence
 
 engine = AutomatedContextEngine(
@@ -185,8 +185,8 @@ engine.max_tokens = 2000
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/contextforge.git
-cd contextforge
+git clone https://github.com/yourusername/contextmg.git
+cd contextmg
 
 # Create virtual environment
 python -m venv .venv
@@ -204,7 +204,7 @@ pip install -e ".[dev]"
 ```python
 from langchain_core.documents import Document
 from langchain_core.runnables import RunnableSequence
-from contextforge.engine import AutomatedContextEngine
+from contextmg.engine import AutomatedContextEngine
 
 # Initialize the context engine
 engine = AutomatedContextEngine(
@@ -247,7 +247,7 @@ result = llm_model.invoke(structured_prompt)
 ### Component-Based Custom Workflows
 
 ```python
-from contextforge.base import StaticContextComponent, AdaptiveContextPool
+from contextmg.base import StaticContextComponent, AdaptiveContextPool
 
 # Define custom components
 system = StaticContextComponent(
@@ -334,7 +334,7 @@ pip install -e ".[dev]"
 pytest -v
 
 # Run with coverage
-pytest --cov=contextforge tests/
+pytest --cov=contextmg tests/
 
 # Run specific test class
 pytest tests/test_engine.py::TestAutomatedContextEngine -v

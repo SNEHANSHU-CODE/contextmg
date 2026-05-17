@@ -9,7 +9,7 @@ from typing import Dict, Any, Optional, List
 from langchain_core.runnables import RunnableSerializable, RunnableConfig
 from langchain_core.prompt_values import PromptValue, StringPromptValue
 from langchain_core.documents import Document
-from contextforge.base import StaticContextComponent, AdaptiveContextPool
+from contextmg.base import StaticContextComponent, AdaptiveContextPool
 import tiktoken
 
 

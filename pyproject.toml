@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "contextforge"
+name = "contextmg"
 version = "0.1.0"
 description = "A declarative, fine-grained automated context engineering framework for LLMs."
 readme = "README.md"
